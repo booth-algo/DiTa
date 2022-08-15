@@ -19,8 +19,29 @@ const Home: NextPage = () => {
       {/* Banner */}
       <Banner />
 
+      {/* Main section */}
+
+      <main className='max-w-7xl mx-auto px-8 sm:px-16'> 
+      {/* max and mx for centering and restricting main body */}
+        <section className='pt-6'>
+          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
+          {/* pb = padding bottom */}
+
+          {/* Pull some data from a server - API endpoints */}
+
+
+
+
+        </section>
+
+      </main>
+
     </div>
   )
+}
+
+export async function getStaticProps() {
+  // for server rendering
 }
 
 export default Home

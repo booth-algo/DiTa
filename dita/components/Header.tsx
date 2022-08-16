@@ -60,7 +60,8 @@ function Header() {
                     objectFit="contain"
                     objectPosition="left"
                 /> */}
-                <div className="font-bold text-3xl text-amber-600">Di</div><div className="text-3xl text-blue-500">Ta</div>
+                <div className="font-bold text-3xl text-amber-600">Di</div><div className="text-3xl text-blue-500">Ta</div>&nbsp;
+                <div className="font-bold text-3xl text-amber-600">滴</div><div className="text-3xl text-blue-500">答</div>
             </div>
 
             {/* middle */}
@@ -102,7 +103,7 @@ function Header() {
 
             {/* responsive nav bar */}
             <div id="navBar">
-                <div id="items" className={isOpen && 'open'}>
+                <div id="items" className={`${isOpen && 'open'} shadow-md`}>
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>

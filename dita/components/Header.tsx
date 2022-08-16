@@ -103,7 +103,7 @@ function Header() {
 
             {/* responsive nav bar */}
             <div id="navBar">
-                <div id="items" className={`${isOpen && 'open'} shadow-md`}>
+                <div id="items" className={isOpen && 'open'}>
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>

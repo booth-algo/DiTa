@@ -6,7 +6,13 @@ function Search() {
   return (
     <div className='h-screen'>
     <Header />
-        {/* Video 3 stopped at 1:08:54 */}
+        <main>
+            <section>
+                <p>300+ Stays for 5 number of guests</p>
+            {/* Video stopped at 1:10:00 */}
+            </section>
+
+        </main>
     <Footer />
     </div>
   )

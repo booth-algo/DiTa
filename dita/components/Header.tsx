@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon, TranslateIcon, MoonIcon  } from '@heroicons/react/solid';
 import { SunIcon } from '@heroicons/react/outline';
 import { useState } from "react";
+import React from "react";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
@@ -10,12 +11,17 @@ import { Calendar } from 'react-date-range';
 
 function Header() {
 
-    const [themeToggle, setThemeToggle] = useState('');
-    function handleOnClickTheme() {
-        setThemeToggle('mode')
-    }
+    // const renderThemeChanger = () => {
+    //     return(
+    //         <Button>
+    //             <SunIcon className="h-6"/>
+    //             <MoonIcon className="h-6"/>
 
-    console.log(`Favicon state: ${themeToggle}`)
+    //         </Button>
+    //     )
+    // };
+
+    
 
     const [searchInput, setSearchInput] = useState('');
     const [startDate, setStartDate] = useState(new Date());
@@ -66,28 +72,24 @@ function Header() {
             </div>
 
             {/* right */}
-            <div className="hidden lg:flex items-center space-x-4 justify-end justify-center text-gray-500">
+            <div className="flex items-center space-x-4 justify-end text-gray-500">
                 {/* see which justify is better 
                 problem is when i hover over one of the buttons, the button semibolds and it moves the other buttons*/}
-                <div className=" md-inline-flex md:border-2 rounded-full flex items-center space-x-5 px-5">
+                <div className="hidden lg:flex items-center space-x-5 px-5">
                     <button className="hover:font-semibold ease-out active:scale-90 duration-150">Home</button>
 
                     <button className="hover:font-semibold ease-out active:scale-90 duration-150">Services</button>
 
-                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">About Us</button>
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">About</button>
 
-                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">Contact Us</button>
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">Contact</button>
                 </div>
 
-                {/* Below this commented is the "Become a host from AirBNB video, can reference its tailwind css" */}
-                {/* <p className="hidden md:inline cursor-pointer">Become a host</p>
-                <GlobeAltIcon className="h-6" /> */}
-
                 {/* Language Icon */}
-                <button className=""><TranslateIcon className="h-6"/></button> 
+                <button className="ease-out active:scale-90 duration-150"><TranslateIcon className="h-6"/></button> 
 
-                {/*  */}
-                <button onClick={handleOnClickTheme} className="ease-out active:scale-90 duration-150"><SunIcon className="h-6"/></button>
+                {/* Light Mode, Dark Mode */}
+                <button className="ease-out active:scale-90 duration-150"><SunIcon className="h-6"/></button>
 
 
                 <div className="flex items-center space-x-2 border-2 p-2 rounded-full">

@@ -8,9 +8,9 @@ function Banner() {
             <Image src ="https://links.papareact.com/0fm" layout="fill" objectFit="cover" />
 
             <div className="absolute top-1/2 w-full text-center">
-                <p className="text-sm font-semibold sm:text-lg">Not sure where to go? Perfect.</p>
+                <p className="text-sm font-semibold md:text-xl lg:text-2xl">Premium HK-Macau Limousine</p>
                 <button className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold 
-                my-3 hover:shadow-xl active:scale-90 transition duration-150">I'm flexible</button>
+                my-3 hover:shadow-xl active:scale-90 transition duration-150">Book Now</button>
 
             </div>
         </div>

@@ -66,17 +66,18 @@ function Header() {
             </div>
 
             {/* right */}
-            <div className="flex items-center space-x-4 justify-end justify-center text-gray-500">
+            <div className="hidden lg:flex items-center space-x-4 justify-end justify-center text-gray-500">
                 {/* see which justify is better 
                 problem is when i hover over one of the buttons, the button semibolds and it moves the other buttons*/}
+                <div className=" md-inline-flex md:border-2 rounded-full flex items-center space-x-5 px-5">
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">Home</button>
 
-                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Home</button>
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">Services</button>
 
-                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Services</button>
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">About Us</button>
 
-                <button className="hover:font-semibold ease-out active:scale-90 duration-150">About Us</button>
-
-                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Contact Us</button>
+                    <button className="hover:font-semibold ease-out active:scale-90 duration-150">Contact Us</button>
+                </div>
 
                 {/* Below this commented is the "Become a host from AirBNB video, can reference its tailwind css" */}
                 {/* <p className="hidden md:inline cursor-pointer">Become a host</p>

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon  } from '@heroicons/react/solid';
+import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon, TranslateIcon, MoonIcon  } from '@heroicons/react/solid';
+import { SunIcon } from '@heroicons/react/outline';
 import { useState } from "react";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -8,6 +9,13 @@ import { Calendar } from 'react-date-range';
 
 
 function Header() {
+
+    const [themeToggle, setThemeToggle] = useState('');
+    function handleOnClickTheme() {
+        setThemeToggle('mode')
+    }
+
+    console.log(`Favicon state: ${themeToggle}`)
 
     const [searchInput, setSearchInput] = useState('');
     const [startDate, setStartDate] = useState(new Date());
@@ -58,13 +66,32 @@ function Header() {
             </div>
 
             {/* right */}
-            <div className="flex items-center space-x-4 justify-end text-gray-500">
-                <p className="hidden md:inline cursor-pointer">Become a host</p>
-                <GlobeAltIcon className="h-6" />
+            <div className="flex items-center space-x-4 justify-end justify-center text-gray-500">
+                {/* see which justify is better 
+                problem is when i hover over one of the buttons, the button semibolds and it moves the other buttons*/}
+
+                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Home</button>
+
+                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Services</button>
+
+                <button className="hover:font-semibold ease-out active:scale-90 duration-150">About Us</button>
+
+                <button className="hover:font-semibold ease-out active:scale-90 duration-150">Contact Us</button>
+
+                {/* Below this commented is the "Become a host from AirBNB video, can reference its tailwind css" */}
+                {/* <p className="hidden md:inline cursor-pointer">Become a host</p>
+                <GlobeAltIcon className="h-6" /> */}
+
+                {/* Language Icon */}
+                <button className=""><TranslateIcon className="h-6"/></button> 
+
+                {/*  */}
+                <button onClick={handleOnClickTheme} className="ease-out active:scale-90 duration-150"><SunIcon className="h-6"/></button>
+
 
                 <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
                     <MenuIcon className="h-6"/>
-                    <UserCircleIcon className="h-6"/>
+                    {/* <UserCircleIcon className="h-6"/> */}
                 </div>
 
             </div>

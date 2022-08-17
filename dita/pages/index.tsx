@@ -29,6 +29,10 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
       <main className='max-w-7xl mx-auto px-8 sm:px-16'> 
       {/* max and mx for centering and restricting main body */}
+        
+        
+        {/* Small card */}
+        
         <section className='pt-6'>
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
           {/* pb = padding bottom */}
@@ -42,6 +46,9 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
         </section>
 
+
+        {/* Medium card */}
+
         <section>
             <h2 className='text-4xl font-semibold py-8'>Live Anywhere</h2>
             
@@ -52,7 +59,9 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
               ))}
               </div>
 
-            
+
+        {/* Large card */}
+
         </section>
 
         <LargeCard

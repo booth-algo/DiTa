@@ -1,8 +1,17 @@
 import React from 'react'
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function services() {
   return (
-    <div>services</div>
+    <div>
+      <Header />
+      
+      
+      services
+      
+      <Footer />
+      </div>
   )
 }
 

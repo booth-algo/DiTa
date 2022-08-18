@@ -14,7 +14,7 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
   return (
     <div className="" /*"flex min-h-screen flex-col items-center justify-center py-2"*/ >
       <Head>
-        <title>DiTa 滴答</title> 
+        <title>DiTa 滴踏</title> 
         {/*Check name and change icon*/}
         <link rel="icon" href="/favicon.ico" />
       </Head>

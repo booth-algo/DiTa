@@ -61,7 +61,7 @@ function Header() {
                     objectPosition="left"
                 /> */}
                 <div className="font-bold text-3xl text-amber-600">Di</div><div className="text-3xl text-blue-500">Ta</div>&nbsp;
-                <div className="font-bold text-3xl text-amber-600">滴</div><div className="text-3xl text-blue-500">答</div>
+                <div className="font-bold text-3xl text-amber-600">滴</div><div className="text-3xl text-blue-500">踏</div>
             </div>
 
             {/* middle */}

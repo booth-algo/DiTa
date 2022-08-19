@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 
-/* response nav bar */
+@layer components {
+    .button {
+        @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg 
+        active:scale-95 active:bg-gray-100 transition duration-100 ease-out;
+    }
+}
+
+/* responsive nav bar */
 #navBar {
     background: transparent;
     display: flex;

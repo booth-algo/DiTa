@@ -6,10 +6,21 @@ function Search() {
   return (
     <div className='h-screen'>
     <Header />
-        <main>
+        <main className='flex'>
             <section>
-                <p>300+ Stays for 5 number of guests</p>
-            {/* Video stopped at 1:10:00 */}
+              <p className='text-xs'>300+ Stays for 5 number of guests</p>
+            
+              <h1 className='text-3xl font-semibold mt-2'>Stays in Mars</h1>
+
+              <div className='flex'>
+                <p className='button'>Cancellation Flexibility</p>
+                <p className='button'>Type of Place</p>
+                <p className='button'>Price</p>
+                <p className='button'>Rooms and Beds</p>
+                <p className='button'>More filters</p>
+              </div>
+
+
             </section>
 
         </main>

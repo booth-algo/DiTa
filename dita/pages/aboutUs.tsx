@@ -7,7 +7,7 @@ function aboutUs() {
     <div>
       <Header />
 
-      About Us
+      <div className='pt-10 pb-10'>About Us</div>
 
 
       <Footer />

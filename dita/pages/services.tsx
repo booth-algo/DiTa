@@ -7,8 +7,7 @@ function services() {
     <div>
       <Header />
       
-      
-      services
+      <div className='pt-10 pb-10'>Services</div>
       
       <Footer />
       </div>

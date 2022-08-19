@@ -1,8 +1,17 @@
 import React from 'react'
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function booking() {
   return (
-    <div>booking</div>
+    <div>
+      <Header />
+    
+      <div className='pt-10 pb-10'>Booking</div>
+      
+
+      <Footer />
+    </div>
   )
 }
 

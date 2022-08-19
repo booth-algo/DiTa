@@ -7,7 +7,7 @@ function contactUs() {
     <div>
       <Header />
 
-      Contact Us
+      <div className='pt-10 pb-10'>Contact Us</div>
 
       <Footer />
     </div>

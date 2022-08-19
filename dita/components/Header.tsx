@@ -121,10 +121,10 @@ function Header({ placeholder }) {
             {/* responsive nav bar */}
             <div id="navBar">
                 <div id="items" className={isOpen && 'open'}>
-                    <a href="/" >Home</a>
-                    <a href="aboutUs">About</a>
-                    <a href="services">Services</a>
-                    <a href="contactUs">Contact</a>
+                    <a onClick={() => router.push("/")} >Home</a>
+                    <a onClick={() => router.push("services")}>Services</a>
+                    <a onClick={() => router.push("aboutUs")}>About</a>
+                    <a onClick={() => router.push("contactUs")}>Contact</a>
                 </div>
                 <div id="navToggle" className={isOpen && 'open'} onClick={() => setIsOpen(!isOpen)}>
                     <div id="bar"></div>

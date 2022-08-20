@@ -30,22 +30,6 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
       <main className='max-w-7xl mx-auto px-8 sm:px-16'> 
       {/* max and mx for centering and restricting main body */}
         
-        
-        {/* Small card */}
-        
-        <section className='pt-6'>
-          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
-          {/* pb = padding bottom */}
-
-          {/* Pull some data from a server - API endpoints */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-          {exploreData?.map((item) => (
-            <SmallCard key={item.img} img={item.img} distance={item.distance} location={item.location}/>
-          ))}
-        </div> 
-
-        </section>
-
 
         {/* Medium card */}
 

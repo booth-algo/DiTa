@@ -1,13 +1,20 @@
 import React from 'react'
+import BookingMap from '../components/BookingMap';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+
 
 function booking() {
   return (
     <div>
       <Header />
     
-      <div className='pt-10 pb-10'>Booking</div>
+      <h1 className='px-10 pt-10 pb-10'>Booking</h1>
+
+      <section className='px-10'>
+        <BookingMap />
+
+      </section>
       
 
       <Footer />

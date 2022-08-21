@@ -114,7 +114,7 @@ function Header({ placeholder }) {
 
             {/* responsive nav bar */}
             <div id="navBar">
-                <div id="items" className={isOpen && 'open'} style={{position:'absolute', right:'100px'}}>
+                <div id="items" className={isOpen && 'open'} style={{position:'absolute', right:'100px', minWidth:'400px', textAlign:'right'}}>
                     <a onClick={() => router.push("/")} >Home</a>
                     <a onClick={() => router.push("services")}>Services</a>
                     <a onClick={() => router.push("aboutUs")}>About</a>

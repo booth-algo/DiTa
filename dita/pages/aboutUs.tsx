@@ -7,6 +7,8 @@ function aboutUs() {
     <div>
       <Header />
       
+      {/* <div className='pt-10 pb-10'>Contact Us</div> */}
+
       <div style={{height: '800px', backgroundColor: '#999'}}>
       
       <div style={{position: 'absolute', top: '80px', left: '0'}} className="w-0 h-0 

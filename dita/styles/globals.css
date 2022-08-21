@@ -66,14 +66,15 @@
 @media (max-width: 1000px) {
     #items {
         position: absolute;
-        top: 100px;
+        top: 60px;
         display: flex;
         flex-direction: column;
-        background: #f0f0f0;
-        left: 0;
-        width: 100%;
+        background: #f5f5f5;
+        left: 10%;
+        width: 110%;
         height: 220px;
-        transform: translateY(-400px);
+        transform: scaleY(0);
+        transform-origin: top;
         transition: all .4s;
     }
 
@@ -82,7 +83,8 @@
     }
 
     #items.open {
-        transform: translateY(0)
+        top: 60px;
+        transform: scaleY(1);
     }
 
     #navToggle {
@@ -92,45 +94,49 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-left: 80px;
+        /* margin-left: 80px; */
     }
     #bar  {
         position: relative;
-        width: 32px;
+        width: 25px;
         height: 2px;
-        background-color: #000;
+        border-radius: 1px;
+        background-color: #777;
+        transition: all .2s ease-in-out
     }
 
     #bar::before, #bar::after {
         content: "";
         position: absolute;
         height: 2px;
-        background: #000;
-        border-radius: 2px;
+        background: #777;
+        border-radius: 1px;
         transition: all .4s ease-in-out;
     }
 
     #bar::before {
-        width: 32px;
+        width: 25px;
         transform: translateY(-8px);
         right: 0;
     }
 
     #bar::after {
-        width: 32px;
+        width: 25px;
         transform: translateY(8px);
     }
 
     #navToggle.open #bar {
-        transform: translate(-40px);
+        /* transform: translate(-40px); */
         background: transparent;
     }
     #navToggle.open #bar::before {
-        width: 32px;
-        transform: rotate(45deg) translate(26px, -26px);
+        width: 25px;
+        transform: rotate(45deg);
+        /* transform: rotate(45deg) translate(26px, -26px); */
     }
     #navToggle.open #bar::after {
-        transform: rotate(-45deg) translate(26px, 26px);
+        transform: rotate(-45deg);
+        /* transform: rotate(-45deg) translate(26px, 26px); */
     }
 
 }

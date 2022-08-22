@@ -10,6 +10,12 @@
     }
 }
 
+/* remove animation when resizing */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
 /* responsive nav bar */
 #navBar {
     background: transparent;
@@ -29,6 +35,9 @@
     font-size: 24px;
     margin: 10px;
     color: #000;
+}
+#items {
+    text-align: right;
 }
 #items a {
     color: #000;
@@ -76,6 +85,7 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: all .4s;
+        text-align: left;
     }
 
     #items a::before {

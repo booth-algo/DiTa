@@ -114,7 +114,7 @@ function Header({ placeholder }) {
 
             {/* responsive nav bar */}
             <div id="navBar">
-                <div id="items" className={isOpen && 'open'} style={{position:'absolute', right:'100px', minWidth:'400px', textAlign:'right'}}>
+                <div id="items" className={isOpen && 'open'} style={{position:'absolute', right:'80px', minWidth:'400px'}}>
                     <a onClick={() => router.push("/")} >Home</a>
                     <a onClick={() => router.push("services")}>Services</a>
                     <a onClick={() => router.push("aboutUs")}>About</a>
@@ -122,12 +122,12 @@ function Header({ placeholder }) {
                     &nbsp;&nbsp;
                 </div>
 
-                <div style={{position:'absolute', right:'10px'}} className="flex space-x-6 justify-end text-gray-500">
+                <div style={{position:'absolute', right:'-10px'}} className="flex space-x-6 justify-end text-gray-500">
                     {/* Language Icon */}
                     <button className="ease-out active:scale-90 duration-150"><TranslateIcon className="h-6"/></button> 
                     {/* Light Mode, Dark Mode */}
                     <button className="ease-out active:scale-90 duration-150"><SunIcon className="h-6"/></button>
-                    <div id="navToggle" className={isOpen && 'open'} onClick={() => setIsOpen(!isOpen)}>
+                    <div id="navToggle" style={{transform: 'translateX(-10px)'}} className={`${isOpen && 'open'}`} onClick={() => setIsOpen(!isOpen)}>
                         <div id="bar" className="h-6"></div>
                     </div>
                 </div>
@@ -169,5 +169,19 @@ function Header({ placeholder }) {
     );
 
 }
+
+// remove animation when resizing
+let resizeTimer;
+setTimeout(function(){
+    window.addEventListener("resize", () => {
+        document.body.classList.add("resize-animation-stopper");
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          document.body.classList.remove("resize-animation-stopper");
+        }, 400);
+      });
+      
+},200);
+
 
 export default Header

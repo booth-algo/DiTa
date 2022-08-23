@@ -18,7 +18,8 @@ function booking() {
 
         {/* Map */}
 
-        <section className='min-w-[600px]'>
+        {/* map is currently hidden */}
+        <section className='hidden min-w-[600px]'>
         
           <BookingMap />
 

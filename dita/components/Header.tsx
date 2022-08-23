@@ -69,13 +69,6 @@ function Header({ placeholder }) {
         
             {/* left */}
             <div onClick={() => router.push("/")} className="relative flex items-center h-10 cursor-pointer my-auto">
-                {/* <Image 
-                    // DiTa picture here 
-                    src='https://links.papareact.com/qd3'
-                    layout='fill'
-                    objectFit="contain"
-                    objectPosition="left"
-                /> */}
                 <div className="font-bold text-3xl text-amber-600">Di</div><div className="text-3xl text-blue-500">Ta</div>&nbsp;
                 <div className="font-bold text-3xl text-amber-600">滴</div><div className="text-3xl text-blue-500">踏</div>
             </div>

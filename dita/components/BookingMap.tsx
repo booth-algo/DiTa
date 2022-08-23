@@ -12,9 +12,9 @@ function BookingMap() {
     mapboxAccessToken={process.env.mapbox_key}
 
     initialViewState={{
-      longitude: 114,
+      longitude: 113.9,
       latitude: 22.3,
-      zoom: 8
+      zoom: 8.5
     }}
 
     />

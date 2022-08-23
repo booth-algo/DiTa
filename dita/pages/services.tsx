@@ -7,7 +7,7 @@ function services() {
     <div>
       <Header />
       
-      <div className='pt-10 pb-10'>Services</div>
+      <h1 className='px-10 pt-10 pb-10 text-4xl'>Services</h1>
       
       <Footer />
       </div>

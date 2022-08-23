@@ -6,18 +6,27 @@ import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon, Translat
 
 
 function booking() {
+
+  // function
+
   return (
     <div>
       <Header />
       <h1 className='px-10 pt-10 pb-10 text-4xl'>Booking</h1>
 
-      <section className='px-10 flex'>
+      <main className='max-w-7xl mx-auto px-8 sm:px-16 flex'> 
+
         {/* Map */}
-        <BookingMap />
+
+        <section className='min-w-[600px]'>
+        
+          <BookingMap />
+
+        </section>
 
         {/* Booking form */}
 
-        <div className=''>
+        <div className='flex'>
 
           <h1 className='px-10 pt-10 pb-5 text-xl'>Start location</h1>
 
@@ -30,10 +39,10 @@ function booking() {
 
         </div>
 
-
-      </section>
-
+      </main>
+      
       <Footer />
+
     </div>
   )
 }

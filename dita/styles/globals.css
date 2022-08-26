@@ -72,7 +72,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     #items {
         position: absolute;
         top: 60px;

@@ -9,7 +9,7 @@ function services() {
       
       {/* <h1 className='px-10 pt-10 pb-10 text-4xl'>Services</h1> */}
 
-      <div style={{padding: '50px', height: '300px'}} className="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-600 h-80 block">
+      <div style={{padding: '50px'}} className="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-600 sm:h-72 h-52 block">
       <div className="text-white text-6xl font-extrabold"><br />Services</div>
       </div>
 

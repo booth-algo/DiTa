@@ -41,6 +41,8 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
                 <MediumCard key={img} img={img} title={title}/>
 
               ))}
+
+              
               </div>
 
 

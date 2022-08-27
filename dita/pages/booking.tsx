@@ -12,7 +12,6 @@ import { useState } from "react";
 
 function booking({ placeholder }) {
 
-  const [searchInput, setSearchInput] = useState('');
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [noOfGuests, setNoOfGuests] = useState(1);
@@ -61,35 +60,33 @@ function booking({ placeholder }) {
         */}
 
 
+
+
         {/* Booking form */}
 
-        <div className='flex grid grid-cols-1 md:grid-cols-4'>
+        <div className='justify-evenly flex grid grid-cols-1 md:grid-cols-4'>
 
           <h1 className='px-10 pt-10 pb-5 text-xl'>Start location</h1>
 
-          <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
+          <div className='flex'>
 
+            <h2 className="text-xl flex-grow">Number of Guests</h2>
 
-          <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
-                <input 
-                value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400" type="text" 
-                placeholder={placeholder || "Starting location"}/>
-                <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
-            </div>
-
-            
-                  
             <input 
-              value={noOfGuests}
-              onChange={(e) => setNoOfGuests(e.target.value)}
-              type="number" 
-              min={1}
-              className="w-12 pl-2 text-lg outline-none text-red-400"
+            value={noOfGuests}
+            onChange={(e) => setNoOfGuests(e.target.value)}
+            type="number" 
+            min={1}
+            className="w-12 pl-2 text-lg outline-none text-red-400"
             /> 
 
+          </div>
+          
+
+
         </div>
+
+
 
       </main>
       

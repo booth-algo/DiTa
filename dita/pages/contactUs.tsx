@@ -17,17 +17,17 @@ function contactUs() {
 
       <div className="hidden md:flex" style={{width: '100vw'}}>
         <br /><br />
-        <div className="inline-block rounded-3xl bg-emerald-400" style={{width: '32%', height: '30vw', marginLeft: '1%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
+        <div className="inline-block rounded-3xl bg-emerald-400" style={{width: '26%', height: '24vw', marginLeft: '8%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
         <span style={{fontSize: '8vw'}}>📞</span>
         <br /><br />
         <span className="text-white font-semibold" style={{fontSize: '2vw'}}>+852 1234 5678</span>
         </div>
-        <div className="inline-block rounded-3xl bg-blue-500" style={{width: '32%', height: '30vw', marginLeft: '1%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
+        <div className="inline-block rounded-3xl bg-blue-500" style={{width: '26%', height: '24vw', marginLeft: '3%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
         <span style={{fontSize: '8vw'}}>✉️</span>
         <br /><br />
         <a href="mailto:abc@gmail.com" className="text-white font-semibold" style={{fontSize: '2vw', textDecoration: 'underline'}}>abc@gmail.com</a>
         </div>
-        <div className="inline-block rounded-3xl bg-amber-400" style={{width: '32%', height: '30vw', marginLeft: '1%', marginRight: '1%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
+        <div className="inline-block rounded-3xl bg-amber-400" style={{width: '26%', height: '24vw', marginLeft: '3%', marginRight: '8%', marginBottom: '2%', paddingTop: '4vw', textAlign: 'center'}}>
         <span style={{fontSize: '8vw'}}>📍</span>
         <br /><br />
         <span className="text-white font-semibold" style={{fontSize: '2vw'}}>Somewhere in the world</span>

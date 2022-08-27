@@ -63,9 +63,11 @@ function booking({ placeholder }) {
 
         {/* Booking form */}
 
-        <div className='flex'>
+        <div className='flex grid grid-cols-1 md:grid-cols-4'>
 
           <h1 className='px-10 pt-10 pb-5 text-xl'>Start location</h1>
+
+          <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
 
 
           <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
@@ -77,7 +79,7 @@ function booking({ placeholder }) {
                 <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
             </div>
 
-            <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
+            
                   
             <input 
               value={noOfGuests}

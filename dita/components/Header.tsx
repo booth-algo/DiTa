@@ -10,7 +10,7 @@ function Header({ placeholder }) {
     const [isOpen, setIsOpen] = useState(false); // responsive nav bar
 
     return (
-        <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5 md:px-10"> 
+        <header id="header" className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5 md:px-10"> 
         {/* md:px is the padding until a certain breakpoint */}
         
             {/* left */}
@@ -61,7 +61,7 @@ function Header({ placeholder }) {
                     &nbsp;&nbsp;
                 </div>
 
-                <div style={{position:'absolute', right:'-10px'}} className="flex space-x-6 justify-end text-gray-500">
+                <div id="buttons" style={{position:'absolute', right:'-10px'}} className="flex space-x-6 justify-end text-gray-500">
                     {/* Language Icon */}
                     <button className="ease-out active:scale-90 duration-150"><TranslateIcon className="h-6"/></button> 
                     {/* Light Mode, Dark Mode */}
@@ -79,16 +79,18 @@ function Header({ placeholder }) {
 }
 
 // remove animation when resizing
-let resizeTimer;
 setTimeout(function(){
+    let resizeTimer;
     window.addEventListener("resize", () => {
         document.body.classList.add("resize-animation-stopper");
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
           document.body.classList.remove("resize-animation-stopper");
         }, 400);
-      });
+    });
       
+    window.scrollTo(0, 100);
+
 },200);
 
 

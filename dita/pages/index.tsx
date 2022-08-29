@@ -85,4 +85,31 @@ export async function getStaticProps() {
   }
 }
 
+// floating nav bar
+// setTimeout(function(){
+//   window.addEventListener("scroll", (event) => {
+//     let scrollY = this.scrollY;
+//     if(scrollY > 200) {
+//         document.getElementById("header").style.backgroundColor = '';
+//         document.getElementById("header").style.boxShadow = '';
+//         document.getElementById("navBar").style.backgroundColor = '';
+//         for(let i=0; i<4; i++) {
+//             document.getElementById("items").getElementsByTagName('a')[i].style.color = '';
+//             document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '';
+//         }
+//         document.getElementById("buttons").style.color = '';
+//     } else if(scrollY <= 200) {
+//         document.getElementById("header").style.backgroundColor = 'transparent';
+//         document.getElementById("header").style.boxShadow = '0';
+//         document.getElementById("navBar").style.backgroundColor = 'transparent';
+//         for(let i=0; i<4; i++) {
+//             document.getElementById("items").getElementsByTagName('a')[i].style.color = 'white';
+//             document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '1';
+//             document.getElementById("buttons").style.color = 'white';
+//         }
+//     }
+//   });
+// },200);
+
+
 export default Home

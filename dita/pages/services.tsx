@@ -1,11 +1,16 @@
 import React from 'react'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { format } from "date-fns";
+import InfoCard from '../components/InfoCard';
+import { useRouter } from 'next/router';
 
 function services() {
   return (
     <div>
       <Header />
+
+      <main>
       
       {/* <h1 className='px-10 pt-10 pb-10 text-4xl'>Services</h1> */}
 
@@ -13,9 +18,35 @@ function services() {
       <div className="text-white text-6xl font-extrabold"><br />Services</div>
       </div>
 
-      <div style={{padding: '50px'}}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+      <div style={{padding: '50px'}}></div>
+
+      <section className='flex-grow pt-14 px-6'>
+        <p className='text-xs'>300+ stays for 69 guests</p>
+      
+        <h1 className='text-3xl font-semibold mt-2 mb-6'>Stays in HK</h1>
+
+        <div className='hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap'>
+          <p className='button'>Cancellation Flexibility</p>
+          <p className='button'>Type of Place</p>
+          <p className='button'>Price</p>
+          <p className='button'>Rooms and Beds</p>
+          <p className='button'>More filters</p>
+        </div>
+
+        <div className='flex flex-col'>
+          <InfoCard 
+          
+          
+          
+          />
+        
+        </div>
+
+      </section>
+
+
+
+      </main>
       
       <Footer />
       </div>

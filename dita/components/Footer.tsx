@@ -1,5 +1,5 @@
 import router from "next/dist/client/router";
-import { SunIcon, MailIcon, PhoneIcon, ChatIcon, DeviceMobileIcon,  } from '@heroicons/react/outline';
+import { SunIcon, MailIcon, PhoneIcon, ChatIcon, DeviceMobileIcon  } from '@heroicons/react/outline';
 
 
 function Footer() {

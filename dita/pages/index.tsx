@@ -22,6 +22,7 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
       {/* Header */}
       <Header />
 
+
       {/* Banner */}
       <Banner />
 
@@ -87,28 +88,45 @@ export async function getStaticProps() {
 
 // floating nav bar
 // setTimeout(function(){
-//   window.addEventListener("scroll", (event) => {
+  
+//   function dynamicFloat() {
+
+//     if(location.href == 'http://localhost:3000/') {
+//       a = 100;
+//     }
+
 //     let scrollY = this.scrollY;
-//     if(scrollY > 200) {
+//     document.getElementById("header").style.position = 'absolute';
+//     document.getElementById("header").style.top = String(scrollY) + 'px';
+//     document.getElementById("header").style.width = '100vw';
+//     if(scrollY > a) {
 //         document.getElementById("header").style.backgroundColor = '';
 //         document.getElementById("header").style.boxShadow = '';
 //         document.getElementById("navBar").style.backgroundColor = '';
 //         for(let i=0; i<4; i++) {
-//             document.getElementById("items").getElementsByTagName('a')[i].style.color = '';
-//             document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '';
+//           document.getElementById("items").getElementsByTagName('a')[i].style.color = '';
+//           document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '';
+//           document.getElementById("items").getElementsByTagName('a')[i].className = '';
 //         }
 //         document.getElementById("buttons").style.color = '';
-//     } else if(scrollY <= 200) {
+
+//     } else if(scrollY <= a) {
 //         document.getElementById("header").style.backgroundColor = 'transparent';
-//         document.getElementById("header").style.boxShadow = '0';
+//         document.getElementById("header").style.boxShadow = 'none';
 //         document.getElementById("navBar").style.backgroundColor = 'transparent';
 //         for(let i=0; i<4; i++) {
-//             document.getElementById("items").getElementsByTagName('a')[i].style.color = 'white';
-//             document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '1';
-//             document.getElementById("buttons").style.color = 'white';
+//           document.getElementById("items").getElementsByTagName('a')[i].style.color = 'white';
+//           document.getElementById("items").getElementsByTagName('a')[i].style.opacity = '1';
+//             document.getElementById("items").getElementsByTagName('a')[i].className = 'floaty';
 //         }
+//         document.getElementById("buttons").style.color = 'white';
 //     }
-//   });
+//   }
+
+//   window.addEventListener("scroll", dynamicFloat);
+//   window.scrollTo(0,1);
+//   window.scrollTo(0,0);
+
 // },200);
 
 

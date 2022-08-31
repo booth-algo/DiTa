@@ -88,8 +88,6 @@ setTimeout(function(){
           document.body.classList.remove("resize-animation-stopper");
         }, 400);
     });
-      
-    window.scrollTo(0, 100);
 
 },200);
 

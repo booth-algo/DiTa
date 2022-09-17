@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
-import SmallCard from '../components/SmallCard'
 import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
@@ -64,26 +63,6 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
     </div>
   )
-}
-
-export async function getStaticProps() {
-  // for server rendering
-  const exploreData = await fetch("https://links.papareact.com/pyp").
-  then(
-    (res) => res.json()
-  );
-
-  const cardsData = await fetch('https://links.papareact.com/zp1').
-  then(
-    (res) => res.json()
-  );
-
-  return {
-    props: {
-      exploreData,
-      cardsData
-    }
-  }
 }
 
 // floating nav bar

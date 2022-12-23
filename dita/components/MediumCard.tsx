@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-function MediumCard({title}) {
+function MediumCard() {
 
     return (
 
@@ -11,7 +11,7 @@ function MediumCard({title}) {
                 {/* <Image src= layout="fill" className="rounded-xl" /> */}
             </div>
 
-            <h3 className="text-2xl mt-3">{title}</h3>
+            <h3 className="text-2xl mt-3">"Wonders of the world"</h3>
 
         </div>
     )

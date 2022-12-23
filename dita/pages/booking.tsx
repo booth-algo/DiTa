@@ -41,7 +41,7 @@ function booking({ placeholder }) {
         <div className='flex w-full min-h-screen justify-center items-center'>
 
           {/* Main cyan frame */}
-          <div className='flex flex-col md:flex-row md:space-x-6 md:space-y-0
+          <div className='flex flex-col justify-between md:flex-row md:space-x-6 md:space-y-0
           space-y-6 bg-cyan-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white
           overflow-hidden
           sm:p-12'>
@@ -50,36 +50,32 @@ function booking({ placeholder }) {
 
               <div className='font-bold text-4xl tracking-wide'>
                 <h1 className='uppercase'>Book now</h1>
-                <p className='pt-2 text-cyan-100 text-sm'>lol heres a paragraph dsfgsdfghbjksdhfbgsdfdfjkddfdffg</p>
+                <p className='pt-2 text-cyan-100 text-sm'>Please enter details in the booking form</p>
               </div>
 
-              <div>
-                <div className='inline-flex space-x-2 items-center 
-                hidden'>
+              
+              <div className='relative space-x-5 items-center'>
 
-                  <BookingMap />
-                  
+                <BookingMap />
 
-                </div>
               </div>
-
-
+              
             </div>
             
             <div className='relative'>
 
-              <div className='absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28'></div>
-              <div className='absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16'></div>
+              {/* <div className='absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28'></div>
+              <div className='absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16'></div> */}
 
 
-              <div className='bg-white rounded-xl shadow-lg p-8 text-gray-600 
-              relative z-10
+              <div className='bg-white rounded-xl shadow-lg p-10 text-gray-600 
+              relative z-10 
               md:w-80'>
 
                 <form action="" className='flex flex-col space-y-4'>
                   <div>
-                    <label htmlFor="" className='text-sm'>Your name</label>    
-                    <input type="text" placeholder='Kimi no nawa' className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300' />
+                    <label htmlFor="" className='text-sm'>Name</label>    
+                    <input type="text" placeholder='Name' className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300' />
                   </div>
       
 
@@ -104,7 +100,7 @@ function booking({ placeholder }) {
                     <textarea rows='4' placeholder='Type here..' className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300' />
                   </div>
 
-                  <button className='inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm'>Place order</button>
+                  <button className='inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm'>Book Now</button>
 
                 </form>
 
@@ -131,7 +127,7 @@ function booking({ placeholder }) {
         {/* Map */}
 
         {/* map is currently hidden */}
-        <section className='hidden min-w-[600px]'>
+        <section className='min-w-[600px]'>
         
           <BookingMap />
 

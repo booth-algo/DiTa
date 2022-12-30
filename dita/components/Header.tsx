@@ -5,10 +5,21 @@ import { useState } from "react";
 import React from "react";
 import router, { useRouter } from "next/dist/client/router";
 
+// language
+import { useTranslation, Trans } from 'react-i18next';
+import '../src/i18n'
+const lngs = {
+  "en": { nativeName: 'EN' },
+  "zh-TW": { nativeName: '繁' },
+  "zh-CN": { nativeName: '简' }
+}
+
+
 function Header({ placeholder }) {
 
     const [isOpen, setIsOpen] = useState(false); // responsive nav bar
-
+    const { t, i18n } = useTranslation()
+    
     return (
         <header id="header" className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5 md:px-10"> 
         {/* md:px is the padding until a certain breakpoint */}
@@ -54,28 +65,49 @@ function Header({ placeholder }) {
             {/* responsive nav bar */}
             <div id="navBar">
                 <div id="items" className={isOpen && 'open'} style={{position:'absolute', right:'80px', minWidth:'400px'}}>
-                    <a onClick={() => router.push("/")} >Home</a>
-                    <a onClick={() => router.push("services")}>Services</a>
-                    <a onClick={() => router.push("aboutUs")}>About</a>
-                    <a onClick={() => router.push("contactUs")}>Contact</a>
+                    <a onClick={() => router.push("/")} >{t("nav1", "Home")}</a>
+                    <a onClick={() => router.push("services")}>{t("nav2", "Services")}</a>
+                    <a onClick={() => router.push("aboutUs")}>{t("nav3", "About")}</a>
+                    <a onClick={() => router.push("contactUs")}>{t("nav4", "Contact")}</a>
                     &nbsp;&nbsp;
                 </div>
 
                 <div id="buttons" style={{position:'absolute', right:'-10px'}} className="flex space-x-6 justify-end text-gray-500">
+
                     {/* Language Icon */}
-                    <button className="ease-out active:scale-90 duration-150"><TranslateIcon className="h-6"/></button> 
+                    <button className="ease-out active:scale-90 duration-150" onClick={langSwitch}><TranslateIcon className="h-6"/></button> 
+
                     {/* Light Mode, Dark Mode */}
                     <button className="ease-out active:scale-90 duration-150"><SunIcon className="h-6"/></button>
+
+                    {/* Nav Bar Toggle */}
                     <div id="navToggle" style={{transform: 'translateX(-10px)'}} className={`${isOpen && 'open'}`} onClick={() => setIsOpen(!isOpen)}>
                         <div id="bar" className="h-6"></div>
                     </div>
+
                 </div>
+
+                <div id="langswitch" style={{position:'absolute', right:'-230px', top: '40px', minWidth:'400px', display: 'none'}}>
+                {Object.keys(lngs).map((lng) => (
+                    <button type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng} className="w-10 h-10 mx-1 bg-blue-600 text-white font-medium text-xs leading-tight rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                        {lngs[lng].nativeName}
+                    </button>
+                ))}
+                </div>
+
+                
 
             </div>
 
         </header>
     );
 
+}
+
+// language switch
+function langSwitch() {
+    const d = document.getElementById('langswitch').style.display;
+    document.getElementById('langswitch').style.display = (d == 'none' ? 'block':'none');
 }
 
 // remove animation when resizing

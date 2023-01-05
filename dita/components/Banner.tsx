@@ -2,6 +2,7 @@ import Image from "next/image";
 import router from "next/router";
 
 // language
+import React from "react";
 import { useTranslation, Trans } from 'react-i18next';
 import '../src/i18n'
 
@@ -17,7 +18,7 @@ function Banner() {
             <div className="absolute top-1/2 w-full text-center">
                 <p className="text-sm font-semibold md:text-xl lg:text-2xl">{t("bannerTitle", "Premium HK-Macau Limousine")}</p>
                 <button onClick={() => router.push("booking")} className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold 
-                my-3 hover:shadow-xl active:scale-90 transition duration-150">{t("bannerBookButton", "Book Now")}</button>
+                my-3 hover:shadow-xl active:scale-90 transition duration-150">{t("bannerBookButton", "Book now")}</button>
 
             </div>
         </div>

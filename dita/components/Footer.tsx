@@ -14,19 +14,19 @@ function Footer() {
 
         <div className="justify-items-center grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 pt-14">
             <div className="space-y-4 text-xs text-gray-800">
-                <h5 onClick={() => router.push("/")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav1", "Home")}</h5>
+                {/* <h5 onClick={() => router.push("/")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav1", "Home")}</h5> */}
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                <h5 onClick={() => router.push("services")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav2", "Services")}</h5>
+                {/* <h5 onClick={() => router.push("services")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav2", "Services")}</h5> */}
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                <h5 onClick={() => router.push("aboutUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav3", "About")}</h5>
+                {/* <h5 onClick={() => router.push("aboutUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav3", "About")}</h5> */}
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                <h5 onClick={() => router.push("contactUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav4", "Contact")}</h5>
+                {/* <h5 onClick={() => router.push("contactUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav4", "Contact")}</h5> */}
             </div>
 
         </div>

@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from "../components/Header"
-import Home from "../components/home"
+import Home from "../pages/home"
 
 const App = () => {
     return (

@@ -9,8 +9,8 @@ import Footer from '../components/Footer'
 
 // remove exploreData when necessary 
 
-// const Home: NextPage = ({ exploreData, cardsData }) => {
-function Home() {
+const Home: NextPage = ({ exploreData, cardsData }) => {
+
   return (
     <div className="" /*"flex min-h-screen flex-col items-center justify-center py-2"*/ >
       <Head>

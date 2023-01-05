@@ -20,7 +20,9 @@
     "react-dom": "18.1.0",
     "react-i18next": "^12.1.1",
     "react-map-gl": "^7.0.19",
+    "react-router-dom": "^6.6.1",
     "tailwind-scrollbar-hide": "^1.1.7",
+    "web-vitals": "^3.1.0",
     "xhr2": "^0.2.1"
   },
   "devDependencies": {

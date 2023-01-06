@@ -1,11 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import MediumCard from '../components/MediumCard'
-import LargeCard from '../components/LargeCard'
+// import Banner from '../components/Banner'
+// import Header from '../components/Header'
+// import MediumCard from '../components/MediumCard'
+// import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
+
+// suppress Hydration error
+import dynamic from "next/dynamic";
+const Banner = dynamic(() => import("../components/Banner"), {ssr: false});
+const Header = dynamic(() => import("../components/Header"), {ssr: false});
+const MediumCard = dynamic(() => import("../components/MediumCard"), {ssr: false});
+const LargeCard = dynamic(() => import("../components/LargeCard"), {ssr: false});
+// const Footer = dynamic(() => import("../components/Footer"), {ssr: false});
 
 // remove exploreData when necessary 
 
@@ -20,7 +28,6 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
       {/* Header */}
       <Header />
-
 
       {/* Banner */}
       <Banner />
@@ -52,9 +59,9 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
         <LargeCard
           img='https://links.papareact.com/4cj'
-          title="The Greatest Outdoors"
-          description="Wishlists curated by Airbnb"
-          buttonText="Get Inspired"
+          // title="The Greatest Outdoors"
+          // description="Wishlists curated by Airbnb"
+          // buttonText="Get Inspired"
         />
 
       </main>
@@ -63,7 +70,10 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
 
     </div>
   )
+
 }
+
+
 
 // floating nav bar
 // setTimeout(function(){

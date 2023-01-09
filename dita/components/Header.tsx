@@ -13,6 +13,7 @@ const lngs = {
   "zh-TW": { nativeName: '繁' },
   "zh-CN": { nativeName: '简' }
 }
+import { t } from 'i18next'
 
 
 function Header({ placeholder }) {
@@ -89,7 +90,7 @@ function Header({ placeholder }) {
 
                 <div id="langswitch" style={{position:'absolute', right:'-230px', top: '40px', minWidth:'400px', display: 'none'}}>
                 {Object.keys(lngs).map((lng) => (
-                    <button type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng} className="w-10 h-10 mx-1 bg-blue-600 text-white border-solid border-blue-500 border font-medium text-xs leading-tight rounded-full shadow-xl hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                    <button type="submit" key={lng} onClick={() => {i18n.changeLanguage(lng);footerUpdate()}} disabled={i18n.resolvedLanguage === lng} className="w-10 h-10 mx-1 bg-blue-600 text-white border-solid border-blue-500 border font-medium text-xs leading-tight rounded-full shadow-xl hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                         {lngs[lng].nativeName}
                     </button>
                 ))}
@@ -109,7 +110,12 @@ function langSwitch() {
     const d = document.getElementById('langswitch').style.display;
     document.getElementById('langswitch').style.display = (d == 'none' ? 'block':'none');
 }
-
+function footerUpdate() {
+    const foots = [t("nav1"), t("nav2"), t("nav3"), t("nav4")]
+    for (let i = 0; i < foots.length; i++) { 
+        document.getElementById("foot"+String(i+1)).innerHTML = foots[i]
+    }
+}
 // remove animation when resizing
 setTimeout(function(){
     let resizeTimer;

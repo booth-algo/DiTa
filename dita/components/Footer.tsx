@@ -4,6 +4,7 @@ import { SunIcon, MailIcon, PhoneIcon, ChatIcon, DeviceMobileIcon  } from '@hero
 // language
 import { useTranslation, Trans } from 'react-i18next';
 import '../src/i18n'
+import { t } from 'i18next'
 
 function Footer() {
     const { t, i18n } = useTranslation()
@@ -14,19 +15,19 @@ function Footer() {
 
         <div className="justify-items-center grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 pt-14">
             <div className="space-y-4 text-xs text-gray-800">
-                {/* <h5 onClick={() => router.push("/")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav1", "Home")}</h5> */}
+                <h5 onClick={() => router.push("/")} id="foot1" className="font-bold hover:scale-110 cursor-pointer uppercase"></h5>
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                {/* <h5 onClick={() => router.push("services")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav2", "Services")}</h5> */}
+                <h5 onClick={() => router.push("services")} id="foot2" className="font-bold hover:scale-110 cursor-pointer uppercase"></h5>
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                {/* <h5 onClick={() => router.push("aboutUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav3", "About")}</h5> */}
+                <h5 onClick={() => router.push("aboutUs")} id="foot3" className="font-bold hover:scale-110 cursor-pointer uppercase"></h5>
             </div>
 
             <div className="space-y-4 text-xs text-gray-800">
-                {/* <h5 onClick={() => router.push("contactUs")} className="font-bold hover:scale-110 cursor-pointer uppercase">{t("nav4", "Contact")}</h5> */}
+                <h5 onClick={() => router.push("contactUs")} id="foot4" className="font-bold hover:scale-110 cursor-pointer uppercase"></h5>
             </div>
 
         </div>
@@ -49,5 +50,15 @@ function Footer() {
     
     );
 }
+
+function footerUpdate() {
+    const foots = [t("nav1"), t("nav2"), t("nav3"), t("nav4")]
+    for (let i = 0; i < foots.length; i++) { 
+        document.getElementById("foot"+String(i+1)).innerHTML = foots[i]
+    }
+}
+setTimeout(function(){
+    footerUpdate()
+}, 200)
 
 export default Footer;

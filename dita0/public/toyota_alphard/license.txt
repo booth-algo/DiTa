@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toyota alphard
+* source:	https://sketchfab.com/3d-models/toyota-alphard-e83454ca830c4dbd8626de9a7073c5a4
+* author:	Jean-llace (https://sketchfab.com/amimocaroline10)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toyota alphard" (https://sketchfab.com/3d-models/toyota-alphard-e83454ca830c4dbd8626de9a7073c5a4) by Jean-llace (https://sketchfab.com/amimocaroline10) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

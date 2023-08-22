@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="backdrop-blur-sm rounded-3xl p-5">
           <h1 className={`${styles.heroHeadText}`}>DiTa</h1>
-          <p className={`${styles.heroSubText} mt-2 text-[#915eff]`}> The Best Limousine Service <br/>in Hong Kong and Macau</p>
+          <p className={`${styles.heroSubText} mt-2 text-[#915eff] underline decoration-sky-500/30`}> The Best Limousine Service <br/>in Hong Kong and Macau</p>
         </div>
       </div>
     

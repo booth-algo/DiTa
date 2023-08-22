@@ -23,7 +23,7 @@ const Booking = () => {
         <h3 className={styles.sectionHeadText}>Booking</h3>
 
         
-        <div className='flex flex-row bg-gray-600 py-4 px-6 rounded-lg outline-none border-none font-medium mt-8'>
+        <div className='flex flex-row bg-sky-950 py-4 px-6 rounded-lg outline-none border-none font-medium mt-8'>
 
           <button className="hover:scale-110">
             <img src = {phone} 
@@ -38,7 +38,7 @@ const Booking = () => {
 
         </div>
 
-        <div className='flex flex-row bg-gray-600 py-4 px-6 text-white rounded-lg outline-none border-none font-medium mt-5'>
+        <div className='flex flex-row bg-sky-950 py-4 px-6 text-white rounded-lg outline-none border-none font-medium mt-5'>
           <button className="hover:scale-110">
             <img src = {wtsicon} 
             alt="logo" 
@@ -52,7 +52,7 @@ const Booking = () => {
 
         </div>
 
-        <div className='flex flex-row bg-gray-600 py-4 px-6 text-white rounded-lg outline-none border-none font-medium mt-5'>
+        <div className='flex flex-row bg-sky-950 py-4 px-6 text-white rounded-lg outline-none border-none font-medium mt-5'>
           <button className="hover:scale-110">
             <img src = {wechaticon} 
             alt="logo" 
@@ -61,7 +61,7 @@ const Booking = () => {
 
           <div className='ml-5'>
             <p className={styles.sectionSubText}>WeChat</p>
-            <h3 className='text-white font-bold text-[24px]'>+853 6683 9769</h3>
+            <h3 className='text-white font-bold text-[22px] sm:text-[24px]'>+853 6683 9769</h3>
           </div>
 
         </div>
@@ -70,10 +70,10 @@ const Booking = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='lg:flex-1 lg:h-auto h-[350px] overflow-hidden rounded-3xl bg-gray-500 object-contain'
+        className='md:flex-1 md:h-auto h-[350px] overflow-hidden rounded-3xl bg-gray-500'
       >
         {/* <CarCanvas /> */}
-        <img src = {car07} className=""/>
+        <img src = {car07} className="h-full w-full object-cover object-center"/>
 
       </motion.div>
 

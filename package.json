@@ -1,6 +1,7 @@
 {
-  "name": "dita0",
+  "name": "dita",
   "private": true,
+  "homepage": "https://ditaexpress.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

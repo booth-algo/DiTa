@@ -1,10 +1,18 @@
 Options -MultiViews
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
-AddType application/javascript .js
-AddType application/javascript .mjs
 
+RewriteEngine On
 RewriteBase /
+
+# Redirect all requests to index.html if they're not an actual file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule ^ index.html [QSA,L]
+
+# Set MIME types for JavaScript files
+<Files "*.js">
+    ForceType application/javascript
+</Files>
+
+<Files "*.mjs">
+    ForceType application/javascript
+</Files>

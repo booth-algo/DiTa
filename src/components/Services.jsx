@@ -21,12 +21,10 @@ const ServiceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={
-        <div className="flex h-full w-full justify-center items-center"> 
-        {/* Height (h-40) based on the number of bullet points
-        Bullet points should be ideally three lines (rule of thirds) */}
+        <div className="flex h-full w-full justify-center"> 
           <img 
             src={experience.card_photo}
-            className="h-[100%] w-[100%]" // set w-[50%] etc to make it look good
+            className="h-[90%] w-[90%] rounded-3xl"
           />
         </div>
       }

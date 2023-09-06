@@ -1,9 +1,5 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -21,17 +17,17 @@ import wtsicon from "./wts-icon.webp";
 import wechaticon from "./wechat-icon.png";
 import phone from "./phone.png";
 import macau02 from "./macau02.jpg";
+import macau03 from "./macau03.jpg";
+import macau04 from "./macau04.jpg";
+import macau05 from "./macau05.jpg";
+import macau06 from "./macau06.jpg";
 
 export {
   logo,
   backend,
-  creator,
-  mobile,
-  web,
-  github,
   menu,
   close,
   car01,car02,car03,car04,car05,car06,car07,car08,car09,
   wtsicon, wechaticon, phone,
-  macau02,
+  macau02,macau03,macau04,macau05,macau06
 };

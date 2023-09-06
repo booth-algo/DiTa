@@ -1,6 +1,6 @@
 import {
     car01,car02,car03,car04,car05,car06,car07,car08,car09,
-    macau02,
+    macau02,macau03,macau04,macau05,macau06
   } from "../assets";
     
   export const navLinks = [
@@ -24,7 +24,7 @@ import {
       title: "Smooth and Speedy",
       num: '1',
       iconBg: "#383E56",
-      card_photo: car09,
+      card_photo: macau04,
       points: [
         "Seamless Transfers: Whether it's a pickup from the airport or a drop-off at your destination, we ensure an impressive journey.", 
         "Trustworthy Service: Rest assured, you and your family are always in good hands with us.", 
@@ -46,7 +46,7 @@ import {
       title: "Top Tier Travel Comfort",
       num: '3',
       iconBg: "#383E56",
-      card_photo: car09,
+      card_photo: car02,
       points: [
         "Professional Drivers: Our team of drivers is dedicated to ensuring your safety and comfort throughout your journey", 
         "Pristine Fleet: We pride ourselves on having a fleet of well-maintained and clean vehicles for our passengers.", 

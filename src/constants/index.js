@@ -21,31 +21,36 @@ import {
   
   const experiences = [
     {
-      title: "The Fast and the Furious",
+      title: "Smooth and Speedy",
       num: '1',
       iconBg: "#383E56",
       card_photo: car09,
       points: [
-        "Whether we pick you up at the airport or drop you off at your final destination, we strive to impress you every step of the way. That’s what makes us unique.", "You and your family are always in good hands with us",
+        "Seamless Transfers: Whether it's a pickup from the airport or a drop-off at your destination, we ensure an impressive journey.", 
+        "Trustworthy Service: Rest assured, you and your family are always in good hands with us.", 
+        "Constant Improvement: As a company, we’re always looking for ways to enhance our operations for your convenience."
       ],
     },
     {
-      title: "Destination",
+      title: "Destination Delivered in Style",
       num: '2',
       iconBg: "#383E56",
       card_photo: macau02,
       points: [
-        "We will ensure that you get to your destination in style, no matter how you travel.",
-        "Limousine service is second to none.", "As a company, we are constantly striving to improve how we operate.", "Adding convenience and safety to your life is our goal.", "Luxurious Lifestyle"
+        "Premium Travel: We guarantee a stylish arrival to your destination.",
+        "Unmatched Service: Our limousine service stands out as the best in the business.", 
+        "Safety & Convenience: Our topmost priority is adding safety and convenience to your journey."
       ],
     },
     {
-      title: "lmao",
+      title: "Top Tier Travel Comfort",
       num: '3',
       iconBg: "#383E56",
       card_photo: car09,
       points: [
-        "Our team of professional drivers is dedicated to ensuring your safety and comfort during your travels with us.", "We take pride in maintaining a fleet of well-maintained vehicles and are committed to keeping them clean and inviting for our passengers.", "Powered by the best cars",
+        "Professional Drivers: Our team of drivers is dedicated to ensuring your safety and comfort throughout your journey", 
+        "Pristine Fleet: We pride ourselves on having a fleet of well-maintained and clean vehicles for our passengers.", 
+        "Elite Vehicles: Our service is powered by the finest cars in the industry.",
       ],
     },
   ];
@@ -77,15 +82,15 @@ import {
         "para1",
       tags: [
         {
-          name: "1",
+          name: "pleasurable",
           color: "blue-text-gradient",
         },
         {
-          name: "1",
+          name: "delightful",
           color: "green-text-gradient",
         },
         {
-          name: "1",
+          name: "smooth",
           color: "pink-text-gradient",
         },
       ],
@@ -97,15 +102,15 @@ import {
         "para3",
       tags: [
         {
-          name: "1",
+          name: "expertise",
           color: "blue-text-gradient",
         },
         {
-          name: "1",
+          name: "reliable",
           color: "green-text-gradient",
         },
         {
-          name: "1",
+          name: "flawless",
           color: "pink-text-gradient",
         },
       ],

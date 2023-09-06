@@ -1,4 +1,3 @@
-import { CarCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -12,8 +11,5 @@ export {
   About,
   Services,
   Booking,
-  CarCanvas, 
-  ComputersCanvas, 
-  StarsCanvas,
   Footer,
 }

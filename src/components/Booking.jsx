@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { CarCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -61,7 +59,7 @@ const Booking = () => {
 
           <div className='ml-5'>
             <p className={styles.sectionSubText}>WeChat</p>
-            <h3 className='text-white font-bold text-[22px] sm:text-[24px]'>+853 6683 9769</h3>
+            <h3 className='text-white font-bold text-[24px]'>+853 6683 9769</h3>
           </div>
 
         </div>

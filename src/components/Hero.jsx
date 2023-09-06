@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
 import { parsePath } from 'react-router-dom'
 
 const Hero = () => {
@@ -19,9 +18,6 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-[#915eff] underline decoration-sky-500/30`}> The Best Limousine Service <br/>in Hong Kong and Macau</p>
         </div>
       </div>
-    
-      {/* <ComputersCanvas /> */} 
-      {/* Uncomment above to reveal the 3D model */}
 
     </section>
     
